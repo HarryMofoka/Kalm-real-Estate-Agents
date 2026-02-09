@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Kalm Real Estate</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <!-- Main Navigation (Desktop/Pill) -->
+    <header class="main-header">
+        <div class="glass-pill">
+            <button id="menu-btn" class="menu-btn" aria-label="Open Menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <a href="index.html" class="logo">Kalm Real Estate</a>
+            <a href="contact.html" class="cta-btn">Contact <i data-lucide="arrow-right"></i></a>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay (Mobile) -->
+    <div id="nav-overlay" class="nav-overlay">
+        <button id="close-menu-btn" class="close-btn" aria-label="Close Menu"><i data-lucide="x"></i></button>
+        <nav class="mobile-nav-links">
+            <a href="properties.html">Find Property</a>
+            <a href="sell.html">Sell Property</a>
+            <a href="valuation.html">Valuation</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="hero-section" style="min-height: 50vh;">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+                alt="Office" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title"><span class="reveal-text visible">About Kalm</span></h1>
+            <p class="hero-subtitle reveal-text visible delay-100">Deeply rooted in the Vaal Triangle.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="container" style="padding: 6rem 2rem;">
+        <div class="section-header">
+            <h2>Our Story</h2>
+            <p>Kalm Real Estate was founded with a simple mission: to bring peace of mind to the property market.</p>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; color: var(--color-text-muted);">
+            <p>We believe that buying or selling a home should not be a stressful experience. With over 12 years of
+                experience in the Vaal region, we have navigated every market condition imaginable. Our team of
+                dedicated professionals combines local expertise with a premium service standard.</p>
+            <p>Transparency, integrity, and excellence are not just words to us—they are the pillars of our business.
+                Whether you are looking for your dream home on the river or selling a family estate, we treat your
+                journey as if it were our own.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Properties</h4>
+                    <a href="properties.html">Buy</a>
+                    <a href="sell.html">Sell</a>
+                    <a href="valuation.html">Valuation</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i data-lucide="arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kalm Real Estate. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-brand disable-select">KALM REAL ESTATE</div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | Kalm Real Estate</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <!-- Main Navigation (Desktop/Pill) -->
+    <header class="main-header">
+        <div class="glass-pill">
+            <button id="menu-btn" class="menu-btn" aria-label="Open Menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <a href="index.html" class="logo">Kalm Real Estate</a>
+            <a href="contact.html" class="cta-btn">Contact <i data-lucide="arrow-right"></i></a>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay (Mobile) -->
+    <div id="nav-overlay" class="nav-overlay">
+        <button id="close-menu-btn" class="close-btn" aria-label="Close Menu"><i data-lucide="x"></i></button>
+        <nav class="mobile-nav-links">
+            <a href="properties.html">Find Property</a>
+            <a href="sell.html">Sell Property</a>
+            <a href="valuation.html">Valuation</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="hero-section" style="min-height: 50vh;">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+                alt="Properties" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title"><span class="reveal-text visible">Find Your Home</span></h1>
+            <p class="hero-subtitle reveal-text visible delay-100">Exclusive listings in the Vaal region.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="container" style="padding: 6rem 2rem;">
+
+        <!-- Filters (Mock) -->
+        <div style="margin-bottom: 4rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn secondary-btn" style="border-radius: 8px;">For Sale</button>
+            <button class="btn secondary-btn" style="border-radius: 8px;">To Rent</button>
+            <button class="btn secondary-btn" style="border-radius: 8px;">Commercial</button>
+        </div>
+
+        <!-- Property Grid -->
+        <div class="advantages-grid" style="margin-top: 0;">
+            <!-- Property 1 -->
+            <div class="advantage-card">
+                <img src="https://images.unsplash.com/photo-1600596542815-3ad19c6f9855?q=80&w=800&auto=format&fit=crop"
+                    alt="House 1">
+                <div class="card-content">
+                    <div class="glass-tag">R 4,500,000</div>
+                    <h3
+                        style="color: white; font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        Vaal River Estate</h3>
+                    <p class="card-desc" style="opacity: 1; max-height: none;">4 Bed • 3 Bath • 2 Garage</p>
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="advantage-card offset-up">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
+                    alt="House 2">
+                <div class="card-content">
+                    <div class="glass-tag">R 2,800,000</div>
+                    <h3
+                        style="color: white; font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        Modern Family Home</h3>
+                    <p class="card-desc" style="opacity: 1; max-height: none;">3 Bed • 2 Bath • Pool</p>
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="advantage-card">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop"
+                    alt="House 3">
+                <div class="card-content">
+                    <div class="glass-tag">R 1,950,000</div>
+                    <h3
+                        style="color: white; font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        Secure Complex Living</h3>
+                    <p class="card-desc" style="opacity: 1; max-height: none;">2 Bed • 2 Bath • Garden</p>
+                </div>
+            </div>
+
+            <!-- Property 4 -->
+            <div class="advantage-card offset-up">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=800&auto=format&fit=crop"
+                    alt="House 4">
+                <div class="card-content">
+                    <div class="glass-tag">R 6,200,000</div>
+                    <h3
+                        style="color: white; font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        Luxury Mansion</h3>
+                    <p class="card-desc" style="opacity: 1; max-height: none;">5 Bed • 4 Bath • Cinema</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Properties</h4>
+                    <a href="properties.html">Buy</a>
+                    <a href="sell.html">Sell</a>
+                    <a href="valuation.html">Valuation</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i data-lucide="arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kalm Real Estate. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-brand disable-select">KALM REAL ESTATE</div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
