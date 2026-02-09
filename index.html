@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalm Real Estate | Premium Vaal Properties</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <span class="loader-text">Kalm</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation Overlay (Mobile) -->
+    <div id="nav-overlay" class="nav-overlay">
+        <button id="close-menu-btn" class="close-btn" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <nav class="mobile-nav-links">
+            <a href="#hero">Find Property</a>
+            <a href="#services">Sell Property</a>
+            <a href="#stats">Valuation</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Navigation (Desktop/Pill) -->
+    <header class="main-header">
+        <div class="glass-pill">
+            <button id="menu-btn" class="menu-btn" aria-label="Open Menu">
+                <i data-lucide="menu"></i>
+            </button>
+            
+            <a href="#" class="logo">
+                Kalm Real Estate
+            </a>
+
+            <a href="#contact" class="cta-btn">
+                Contact
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg">
+            <!-- Using a high-quality placeholder image for now, ideally replace with local asset -->
+            <img src="https://images.unsplash.com/photo-1600596542815-3ad19c6f9855?q=80&w=2070&auto=format&fit=crop" alt="Luxury Vaal Property" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="reveal-text">Kalm</span>
+                <span class="reveal-text delay-100">Real Estate</span>
+            </h1>
+            <p class="hero-subtitle reveal-text delay-200">Premium Living in the Vaal</p>
+        </div>
+    </section>
+
+    <!-- KPI / Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-on-scroll">
+                    <span class="stat-number">300+</span>
+                    <span class="stat-label">Properties Sold</span>
+                </div>
+                <div class="stat-item reveal-on-scroll delay-100">
+                    <span class="stat-number">12+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item reveal-on-scroll delay-200">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Client Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages-section">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <h2>Why Choose <span class="accent-text">Kalm</span></h2>
+                <p>Experience the peace of mind that comes with expert guidance.</p>
+            </div>
+
+            <div class="advantages-grid">
+                <!-- Card 1 -->
+                <div class="advantage-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Transparency">
+                    <div class="card-content">
+                        <div class="glass-tag">Transparency</div>
+                        <p class="card-desc">Honest communication at every step of your journey.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="advantage-card offset-up reveal-on-scroll delay-100">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop" alt="Local Expertise">
+                    <div class="card-content">
+                        <div class="glass-tag">Vaal Experts</div>
+                        <p class="card-desc">Deeply rooted in the Vaal Triangle community.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="advantage-card reveal-on-scroll delay-200">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop" alt="Trust">
+                    <div class="card-content">
+                        <div class="glass-tag">Trust</div>
+                        <p class="card-desc">Building lasting relationships through integrity.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="advantage-card offset-up reveal-on-scroll delay-300">
+                    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=800&auto=format&fit=crop" alt="Excellence">
+                    <div class="card-content">
+                        <div class="glass-tag">Excellence</div>
+                        <p class="card-desc">Premium service for premium properties.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-buttons reveal-on-scroll">
+                <a href="#contact" class="btn primary-btn">Book Consultation</a>
+                <a href="#process" class="btn secondary-btn">Our Process <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Featured Slider -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="slider-header reveal-on-scroll">
+                <h2>Client Stories</h2>
+                <div class="slider-controls">
+                    <button id="prevBtn" class="control-btn" aria-label="Previous"><i data-lucide="arrow-left"></i></button>
+                    <button id="nextBtn" class="control-btn" aria-label="Next"><i data-lucide="arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="slider-viewport">
+                <div class="slider-track" id="slider-track">
+                    <!-- Slide 1 -->
+                    <div class="slide-card">
+                        <p class="quote">"Kalm Real Estate made selling our home effortless. Their attention to detail is unmatched."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100" alt="Client" class="client-avatar">
+                            <div>
+                                <span class="client-name">Sarah Jenkins</span>
+                                <span class="client-date">Vaalpark, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide-card">
+                        <p class="quote">"Professional, transparent, and truly premium service. Highly recommended."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100" alt="Client" class="client-avatar">
+                            <div>
+                                <span class="client-name">David Ross</span>
+                                <span class="client-date">Vanderbijlpark, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide-card">
+                        <p class="quote">"They understood exactly what we were looking for. We found our dream home in weeks."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100" alt="Client" class="client-avatar">
+                            <div>
+                                <span class="client-name">Emily & Mark</span>
+                                <span class="client-date">Sasolburg, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Dynamic Section -->
+    <section id="services" class="services-section reveal-on-scroll">
+        <div class="services-container">
+            <!-- Background Images -->
+            <div class="service-bg active" id="bg-1" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop');"></div>
+            <div class="service-bg" id="bg-2" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop');"></div>
+            <div class="service-bg" id="bg-3" style="background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1600&auto=format&fit=crop');"></div>
+            
+            <div class="services-overlay"></div>
+
+            <div class="services-content">
+                <h2 id="service-text" class="service-title">Selling Property</h2>
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="reveal-on-scroll">Frequently Asked Questions</h2>
+            
+            <div class="accordion">
+                <!-- Item 1 -->
+                <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-header">
+                        <span>How long does the process take?</span>
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Typically 3-6 months, depending on market conditions and property type.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="accordion-item reveal-on-scroll delay-100">
+                    <button class="accordion-header">
+                        <span>Do you offer free valuations?</span>
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, we provide complimentary market valuations for all properties in the Vaal area.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="accordion-item reveal-on-scroll delay-200">
+                    <button class="accordion-header">
+                        <span>Why choose an exclusive mandate?</span>
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>An exclusive mandate allows us to dedicate maximum resources and marketing budget to your property, often resulting in a faster sale at a better price.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Properties</h4>
+                    <a href="#">Buy</a>
+                    <a href="#">Sell</a>
+                    <a href="#">Valuation</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i data-lucide="arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kalm Real Estate. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-brand disable-select">
+                KALM REAL ESTATE
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+/* Layout & Sections */
+
+/* Header & Navigation */
+.main-header {
+    position: fixed;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    /* Let clicks pass through outside the pill */
+}
+
+.glass-pill {
+    pointer-events: auto;
+    background: var(--color-glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-glass-border);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-pill);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: var(--shadow-glass);
+    transition: all var(--transition-normal);
+}
+
+.glass-pill:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    color: var(--color-primary);
+}
+
+.menu-btn,
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color var(--transition-fast);
+}
+
+.menu-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cta-btn {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    background-color: black;
+}
+
+/* Mobile Nav Overlay */
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: var(--color-background);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+}
+
+.nav-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-overlay .close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: white;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.mobile-nav-links a {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--color-primary);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all var(--transition-normal);
+}
+
+.nav-overlay.open .mobile-nav-links a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, transparent, var(--color-background));
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 10;
+    mix-blend-mode: difference;
+    /* Creates that cool inverted text effect over light/dark bg */
+    color: white;
+    /* Base color for mix-blend to work against usually dark images or light bg */
+}
+
+/* Fallback color for mix-blend-mode if it fails or against light bg */
+@media (prefers-color-scheme: light) {
+    .hero-content {
+        mix-blend-mode: normal;
+        color: var(--color-primary);
+    }
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.85;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+/* Sections General */
+.stats-section {
+    padding: var(--section-spacing) 0;
+    margin-top: -4rem;
+    /* Overlap hero slightly */
+    position: relative;
+    z-index: 20;
+    background: transparent;
+}
+
+.advantages-section,
+.testimonials-section,
+.services-section,
+.faq-section {
+    padding: var(--section-spacing) 0;
+}
+
+/* Footer */
+.main-footer {
+    background-color: white;
+    padding: 6rem 0 2rem;
+    border-top-left-radius: var(--radius-xl);
+    border-top-right-radius: var(--radius-xl);
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.03);
+    margin-top: 4rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+.footer-col h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.footer-col a {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.footer-col a:hover {
+    color: var(--color-text-muted);
+    padding-left: 10px;
+}
+
+.newsletter-form {
+    position: relative;
+    max-width: 300px;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1.5rem;
+    background: var(--color-background);
+    border: none;
+    border-radius: var(--radius-md);
+    outline: none;
+    font-family: var(--font-body);
+}
+
+.newsletter-form button {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: opacity var(--transition-fast);
+}
+
+.newsletter-form button:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--color-background);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.social-links a:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.footer-brand {
+    font-family: var(--font-heading);
+    font-size: 12vw;
+    line-height: 1;
+    text-align: center;
+    opacity: 0.05;
+    margin-top: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}

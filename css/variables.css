@@ -1,0 +1,44 @@
+:root {
+    /* Colors - Premium Monochrome Palette */
+    --color-primary: #17191F;      /* Deep Black/Charcoal */
+    --color-secondary: #FFFFFF;    /* Pure White */
+    --color-background: #F6F7FA;   /* Soft Grey-White */
+    --color-accent: #A1A19F;       /* Stone Grey */
+    --color-text-main: #17191F;
+    --color-text-muted: #6B7280;
+    --color-border: rgba(0, 0, 0, 0.1);
+    
+    /* Overlay/Glass Colors */
+    --color-glass-bg: rgba(255, 255, 255, 0.85);
+    --color-glass-border: rgba(255, 255, 255, 0.5);
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --container-width: 1400px;
+    --container-padding: 2rem;
+    --section-spacing: 6rem;
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 40px;
+    --radius-pill: 9999px;
+    
+    /* Shadows */
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Dark Mode Support (Implicit via classes if needed later) */
+/* Ideally keep light/airy for "Kalm" effect unless dark mode requested */
